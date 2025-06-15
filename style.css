@@ -44,6 +44,19 @@ body {
 h1, h2 {
     color: #8c6300;
 }
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
 
 
 
