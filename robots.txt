@@ -1,3 +1,0 @@
- user-agent
-allow
-sitemap: https//Rokon-Alofuk.com/sitemap.xml
