@@ -6,7 +6,7 @@ body {
     direction: rtl;
     background-color: #dbd9d9;
     color: #333;
-    font-size: 13px;
+    font-size: auto;
       line-height: 1.5;
   
 }
