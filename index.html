@@ -145,5 +145,58 @@
         <p>©   ركن الأفق للعقارات. جميع الحقوق محفوظة.</p>
         (رقم رخصة فال 1100219101)
     </footer>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // عناصر التحكم
+    const buyBtn = document.getElementById("buyBtn");
+    const rentBtn = document.getElementById("rentBtn");
+    const propertyType = document.getElementById("propertyType");
+    const regionSelect = document.getElementById("region");
+    const searchBtn = document.getElementById("searchBtn");
+
+    let searchMode = "إيجار"; // القيمة الافتراضية
+
+    // التفاعل مع زر الشراء والإيجار
+    buyBtn.addEventListener("click", () => {
+      searchMode = "شراء";
+      buyBtn.classList.add("active");
+      rentBtn.classList.remove("active");
+    });
+
+    rentBtn.addEventListener("click", () => {
+      searchMode = "إيجار";
+      rentBtn.classList.add("active");
+      buyBtn.classList.remove("active");
+    });
+
+    // تنفيذ البحث (محاكاة)
+    searchBtn.addEventListener("click", () => {
+      const type = propertyType.value;
+      const region = regionSelect.value;
+
+      alert(
+        بحث عن عقار:\nنوع العملية: ${searchMode}\nالنوع: ${type}\nالمنطقة: ${region}
+      );
+
+      // هنا يمكن لاحقًا إرسال البيانات إلى قاعدة بيانات أو إجراء فلترة
+    });
+
+    // إضافة خيارات ديناميكية (مثال - أضف الباقي حسب حاجتك)
+    const types = ["شقة", "فيلا", "أرض", "محل"];
+    const regions = ["الرياض", "جدة", "مكة", "الدمام", "الخبر"];
+
+    types.forEach((item) => {
+      const option = document.createElement("option");
+      option.text = item;
+      propertyType.appendChild(option);
+    });
+
+    regions.forEach((item) => {
+      const option = document.createElement("option");
+      option.text = item;
+      regionSelect.appendChild(option);
+    });
+  });
+</script>
 </body>
 </html>
