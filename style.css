@@ -1,72 +1,241 @@
-
 body {
-    font-family: 'Tahoma', sans-serif;
-    margin: 0;
-    padding: 0;
-    direction: rtl;
-    background-color: #dbd9d9;
-    color: #333;
-    font-size: auto;
-      line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  direction: rtl;
+  margin: 0;
+  padding: 30px;
+}
+.highlight-title {
+  color: #5e2d2d;
+}
+
+.search-container {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(46, 13, 13, 0.1);
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header-row h2 {
+  font-size: 24px;
+  color: #3b2b2b;
+  margin: 0;
+}
+
+.toggle-buttons button {
+  padding: 10px 25px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #3b2b2b;
+  background-color: #fff;
+  color: #3b2b2b;
+}
+
+.toggle-buttons button.active {
+  background-color: #5e2d2d;
+  color: #fff;
+}
+
+.filters-row {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter select {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 15px;
   
 }
 
-.header-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.search-btn {
+
+  background-color: #5e2d2d;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+
 }
 
+.title {
+  font-size: 26px;
+  color: #4a2e2e;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  background-color: #683737;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.toggle-btn {
+  padding: 10px 20px;
+  border: 1px solid #999;
+  background-color: white;
+  color: #4b2e2e;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.toggle-btn.active {
+  background-color: #814d4d;
+  color: white;
+  border: 1px solid #814d4d;
+}
+
+.filter-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-btn, .filter-option {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-btn {
+  padding: 10px 25px;
+  background-color: #814d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+h2 {
+  font-size: 30px;
+}
 h1 {
   font-size: 50px;
  
      }
+header {
+  background-image: url('header.png'); /*header*/
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 
 
-.overlay {
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 90%;
+
+
+
 }
 
 .logo {
-    width: 80px;
-    display: block;
-    margin: 0 auto 10px;
-}
+  margin: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  width: 90%;
+  max-width: 800px;
+  margin-inline: auto;
 
-.hero {
-    position: relative;
-    text-align: center;
-    color: #2f2f2f;
-}
+  padding: 20px;
+  border-radius: 10px;
+  
 
-h1, h2 {
-    color: #8c6300;
-}
-video {
-  width: 100%;
-  height: auto;
-  display: block;
+ 
 }
 
 
-video {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+.main-buttons {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  
+}
 
+.main-buttons button {
+  padding: 10px 25px;
+  background-color: #693737;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
 
+.section {
+  margin: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  width: 90%;
+  max-width: 800px;
+  margin-inline: auto;
+}
 
+.section h2 {
+  color: #693737;
+}
+
+.section h1 {
+  color: #693737;
+}
+.services {
+  text-align: right;
+  padding-right: 20px;
+}
 
 section {
     padding: 30px;
@@ -74,11 +243,17 @@ section {
     max-width: 900px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ box-shadow: 0 0 10px #ccc;
+.contact-title {
+  color: #693737; /* غيّر اللون كما تحب */
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center; /* هذا يجعل النص في المنتصف */
+}
 }
 .social-icons h2 {
   margin-bottom: 20px;
-  color: #8c6300;
+  color: #693737;
 }
 
 .social-icons a {
@@ -107,11 +282,14 @@ section {
 ul {
     list-style: none;
     padding: 0;
+    
 }
 
 ul li::before {
     content: "✔ ";
     color: green;
+    
+    
 }
 
 footer {
