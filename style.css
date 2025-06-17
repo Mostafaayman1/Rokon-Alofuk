@@ -299,3 +299,8 @@ footer {
     margin-top: 20px;
     font-size: 14px;
 }
+button.active {
+  background-color: #693737;
+  color: white;
+  border: none;
+}
