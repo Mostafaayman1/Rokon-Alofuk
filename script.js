@@ -35,6 +35,18 @@ window.onload = function () {
       if (section && section.classList.contains('section-content')) {
         section.style.display = 'block';
       }
-    });
-  });
+    });
+  });
+
+  document.querySelectorAll('.toggle-buttons .toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      console.log("زر تم الضغط عليه:", button.textContent); // للتجربة
+
+      // إزالة التفعيل من جميع الأزرار
+      document.querySelectorAll('.toggle-buttons .toggle').forEach(btn => btn.classList.remove('active'));
+
+      // تفعيل الزر الذي تم الضغط عليه
+      button.classList.add("active");
+    });
+  });
 };
