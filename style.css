@@ -1,10 +1,4 @@
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f7f7f7;
-  direction: rtl;
-  margin: 0;
-  padding: 30px;
-}
+
 .highlight-title {
   color: #5e2d2d;
 }
@@ -33,21 +27,17 @@ body {
 
 .toggle-buttons button {
   background-color: white;
-  border: 2px solid #7b2b2b; /* لون الإطار */
-  color: black;
+  border: 2px solid #7b2b2b;
+  color: #3b2b2b;
   padding: 10px 20px;
   font-size: 16px;
-  margin-left: 10px;
+  margin-left: 8px;
   cursor: pointer;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-.toggle-buttons button.active {
-  background-color: #7b2b2b; /* لون مميز عند التفعيل */
-  color: white;
-}
-
+/* الزر عند التفعيل */
 .toggle-buttons button.active {
   background-color: #ffffff;
   color: #3b2b2b;
@@ -207,7 +197,7 @@ header.about-us {
   padding: 30px 20px;
   max-width: 800px;
   margin: auto;
-  background-color: white;
+  background-color: rgb(133, 52, 52);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -324,16 +314,6 @@ footer {
 
  
 }
-
-
-.main-buttons {
-  margin: 20px auto;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  
-}
-
 .main-buttons button {
   padding: 10px 25px;
   background-color: #693737;
@@ -342,6 +322,7 @@ footer {
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease;
   
 }
 
@@ -367,20 +348,21 @@ footer {
   text-align: right;
   padding-right: 20px;
 }
-
+section,
 section {
     padding: 30px;
     margin: 30px auto;
     max-width: 900px;
     background: #fff;
     border-radius: 8px;
- box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
 .contact-title {
-  color: #693737; /* غيّر اللون كما تحب */
+  color: #693737;
   font-weight: bold;
   font-size: 24px;
-  text-align: center; /* هذا يجعل النص في المنتصف */
-}
+  text-align: center;
 }
 .social-icons h2 {
   margin-bottom: 20px;
