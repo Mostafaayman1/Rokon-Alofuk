@@ -1,0 +1,26 @@
+[
+  {
+    "status": "rent",
+    "type": "فلل",
+    "area": "الرياض",
+    "title": "فيلا للإيجار في الرياض",
+    "rooms": 5,
+    "bathrooms": 4,
+    "halls": 2,
+    "price": "150,000",
+    "phone": "966550811106",
+    "image": "villa.jpg"
+  },
+  {
+    "status": "rent",
+    "type": "شقق",
+    "area": "جدة",
+    "title": "شقة للإيجار في جدة",
+    "rooms": 3,
+    "bathrooms": 2,
+    "halls": 1,
+    "price": "60,000",
+    "phone": "966550811106",
+    "image": "villa.jpg"
+  }
+]
