@@ -99,21 +99,7 @@ header {
   transition: background 0.3s ease;
 }
 
-/* محتوى من نحن */
-.logo {
-  margin: 30px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
-  max-width: 800px;
-}
-
-.highlight-title h1 {
-  font-size: 35px;
-  color: #693737;
-  margin-bottom: 10px;
-}
+/* أزرار الأقسام */
 .main-buttons {
   display: flex;
   justify-content: center;
@@ -138,20 +124,42 @@ header {
   background-color: #4d1f1f;
 }
 
-/* الأقسام */
-.section {
+/* توحيد مقاسات جميع الإطارات */
+.section,
+.logo,
+.social-icons,
+.contact-us,
+.box {
+  max-width: 900px;
   margin: 30px auto;
-  padding: 20px;
   background-color: white;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px #ccc;
-  max-width: 800px;
+  text-align: right;
 }
 
-.section h2, .section h1 {
+/* محتوى من نحن */
+.logo {
+  text-align: center;
+}
+
+.highlight-title h1 {
+  font-size: 35px;
   color: #693737;
+  margin-bottom: 10px;
 }
 
+/* الأقسام */
+.section h2,
+.section h1,
+.social-icons h2,
+.contact-us .contact-title {
+  color: #693737;
+  text-align: center;
+}
+
+/* قسم الخدمات */
 .services {
   text-align: right;
   padding-right: 20px;
@@ -167,19 +175,9 @@ ul li::before {
   color: green;
 }
 
-/* روابط التواصل */
+/* روابط التواصل الاجتماعي */
 .social-icons {
   padding: 30px;
-  background: #fff;
-  max-width: 900px;
-  margin: 30px auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #ccc;
-}
-
-.social-icons h2 {
-  margin-bottom: 20px;
-  color: #693737;
 }
 
 .social-icons a {
@@ -214,14 +212,25 @@ ul li::before {
   font-size: 18px;
   color: #444;
   margin: 10px 0;
+  text-align: right;
 }
+
+.contact-info a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* رسالة عدم وجود نتائج */
 .no-results {
   text-align: center;
   font-size: 18px;
   color: #a00;
   margin-top: 30px;
 }
-/* تنسيق الجداول */
 
 /* التذييل */
 footer {
@@ -232,10 +241,12 @@ footer {
   margin-top: 20px;
   font-size: 14px;
 }
+
 footer a {
   color: #0e06a2;
   text-decoration: none;
 }
+
 footer a:hover {
   text-decoration: underline;
 }
