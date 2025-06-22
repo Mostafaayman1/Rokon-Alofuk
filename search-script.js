@@ -9,11 +9,15 @@ window.onload = function () {
   fetch('properties.json')
     .then(response => response.json())
     .then(data => {
-      const filtered = data.filter(item =>
-        (!searchParams.status || item.status.toLowerCase().trim() === searchParams.status) &&
-        (!searchParams.type || item.type.toLowerCase().trim() === searchParams.type) &&
-        (!searchParams.area || item.area.toLowerCase().trim() === searchParams.area)
-      );
+      const filtered = data.filter(item => {
+        const itemStatus = (item.status || "").toLowerCase().trim();
+        const itemType = (item.type || "").toLowerCase().trim();
+        const itemArea = (item.area || "").toLowerCase().trim();
+
+        return (!searchParams.status || itemStatus === searchParams.status) &&
+               (!searchParams.type || itemType === searchParams.type) &&
+               (!searchParams.area || itemArea === searchParams.area);
+      });
 
       renderResults(filtered);
     })
@@ -32,7 +36,7 @@ window.onload = function () {
     }
 
     const titleElement = document.getElementById("results-title");
-    if (properties[0]) {
+    if (titleElement && properties[0]) {
       const word = properties[0].type === "محلات" ? "محلات" :
                    properties[0].type === "فلل" ? "الفلل" : "العقارات";
       const label = properties[0].status === "rent" ? "للإيجار" : "للبيع";
