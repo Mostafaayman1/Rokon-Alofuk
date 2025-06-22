@@ -3,16 +3,19 @@ window.onload = function () {
   const searchParams = {
     status: (params.get("status") || "").toLowerCase().trim(),
     type: (params.get("type") || "").toLowerCase().trim(),
-    area: (params.get("area") || "").toLowerCase().trim()
+    area: (params.get("area") || "").toLowerCase().trim().replace(/\s+/g, "")
   };
 
   fetch('properties.json')
     .then(response => response.json())
     .then(data => {
       const filtered = data.filter(item => {
-        const itemStatus = (item.status || "").toLowerCase().trim();
-        const itemType = (item.type || "").toLowerCase().trim();
-        const itemArea = (item.area || "").toLowerCase().trim();
+        const itemStatus = String(item.status || "").toLowerCase().trim();
+        const itemType = String(item.type || "").toLowerCase().trim();
+        const itemArea = String(item.area || "").toLowerCase().trim().replace(/\s+/g, "");
+
+        // Debug log to check what's happening
+        console.log("item.area =", `"${itemArea}"`, "| search =", `"${searchParams.area}"`);
 
         return (!searchParams.status || itemStatus === searchParams.status) &&
                (!searchParams.type || itemType === searchParams.type) &&
