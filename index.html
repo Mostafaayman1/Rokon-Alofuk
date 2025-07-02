@@ -9,75 +9,23 @@
 </head>
 
 <body>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" />
   <header></header>
-
-  <div class="search-container">
-    <div class="header-row">
-      <h2>ابحث عن عقارك</h2>
-      <div class="toggle-buttons">
-        <button class="toggle" data-status="rent">إيجار</button>
-        <button class="toggle" data-status="buy">شراء</button>
-      </div>
-    </div>
-
-   <div class="search-container">
-  <div class="filters-row">
-    <div class="filter">
-      <label for="type">نوع العقار</label>
-      <select id="type">
-        <option value="">اختر</option>
-        <option value="محلات">محلات</option>
-        <option value="شقق">شقق</option>
-        <option value="فلل">فلل</option>
-        <option value="أراضي">أراضي</option>
-        <option value="مكاتب">مكاتب</option>
-        <option value="استرحات">استرحات</option>
-
-      </select>
-    </div>
-
-    <div class="filter">
-      <label for="location">المنطقة</label>
-      <select id="location">
-        <option value="">اختر</option>
-        <option value="الرياض">الرياض</option>
-        <option value="أبها">أبها</option>
-        <option value="المدينة المنورة">المدينة المنورة</option>
-        <option value="الدمام">الدمام</option>
-        <option value="جدة">جدة</option>
-      </select>
-    </div>
-
-    <button class="search-btn" onclick="searchAds()">بحث</button>
-  </div>
-</div>
-
-<div id="results" class="results-section"></div>
-
-    </div>
-  </div>
 
   <section class="about-us">
     <div class="logo">
       <center>
-        <div class="highlight-title">
+        <span class="highlight-title">
           <h1>ركن الأفق للعقارات</h1>
-        </div>
-        <p>قرب لك الفرصة، ونبعد عنك العناء!</p>
+        </span>
+        <p>قريب لك الفرصة، ونبعد عنك العناء!</p>
       </center>
     </div>
-  <div class="section">
-<div class="main-buttons">
-  <h1 class="section-label">اختر ما يناسبك:</h1>
-  <button onclick="window.location.href='rent.html'">إيجار</button>
-  <button onclick="window.location.href='buy.html'">شراء</button>
-  <button onclick="window.location.href='add-ad.html'">أضف إعلانك</button>
-</div>
-
-
+<div class="main-buttons" style="text-align:center;">
+    <button onclick="location.href='rent.html'">إيجار</button>
+    <button onclick="location.href='buy.html'">شراء</button>
+    <button onclick="location.href='add.html'">أضف إعلانك</button>
   </div>
+<link rel="stylesheet" href="style.css">
   <div class="section">
     <center><h2>من نحن</h2></center>
     <p>ركن الأفق للعقارات متخصص في التطوير والتسويق العقاري وإدارة الأملاك. نخبة متميزة في عالم العقارات منذ عام 1416.</p>
@@ -87,67 +35,46 @@
     </video>
   </div>
 
-
-    <div class="section">
-      <center><h2>خدماتنا</h2></center>
-      <ul class="services">
-        <li>بيع و شراء العقارات السكنية و التجارية</li>
-        <li>تأجير العقارات</li>
-        <li>إدارة الأملاك</li>
-      </ul>
-    </div>
-
-    <section class="social-icons">
-      <center><h2>مواقع التواصل الاجتماعي</h2></center>
-      <a href="https://www.facebook.com/ruknalofuk/" target="_blank"><i class="fab fa-facebook"></i><b> فيسبوك </b></a>
-      <a href="https://www.instagram.com/ruknalofuk/" target="_blank"><i class="fab fa-instagram"></i><b> انستغرام </b></a>
-      <a href="https://www.youtube.com/@RoknAlofuk" target="_blank"><i class="fab fa-youtube"></i><b> يوتيوب </b></a>
-      <a href="https://www.tiktok.com/@rukn_alofuk" target="_blank"><i class="fab fa-tiktok"></i><b> تيك توك </b></a>
-      <a href="https://x.com/RuknAlofuk" target="_blank"><i class="fab fa-x-twitter"></i><b> X-Twitter </b></a>
-      <a href="https://wa.me/96655011106" target="_blank"><i class="fab fa-whatsapp"></i><b> واتساب </b></a>
-    </section>
-
-   <section class="contact-us box">
-  <h2 class="contact-title">تواصل معنا</h2>
-  <div class="contact-info">
-    <p>📞 الهاتف الأرضي: 0114760075 - 0114721110</p>
-    <p>📱 الجوال / واتساب: 0506899228 - 0550811106</p>
-    <p>✉ البريد الإلكتروني: <a href="mailto:RokonAlofuk1@gmail.com">RokonAlofuk1@gmail.com</a></p>
-    <p>📍 العنوان: السعودية - الرياض - حي الملز - شارع جرير</p>
+  <div class="section">
+    <center><h2>خدماتنا</h2></center>
+    <ul class="services">
+      <li>بيع و شراء العقارات السكنية و التجارية</li>
+      <li>تأجير العقارات</li>
+      <li>إدارة الأملاك</li>
+    </ul>
   </div>
-</section>
 
-
-    <footer>
-      <p>© ركن الأفق للعقارات. جميع الحقوق محفوظة.</p>
-      (رقم رخصة فال 1100219101)
-    </footer>
+  <div class="section">
+    <center><h2>عروضنا</h2></center>
+    <ul class="services">
+      <li><a href="https://www.notion.so/21f382cd612b80f2a454d34f41a8c1de?v=21f382cd612b80b1bdca000c1f4be813&source=copy_link">استعرض جميع العروض</a></li>
+    </ul>
+  </div>
+  <section class="social-icons">
+    <center><h2>مواقع التواصل الإجتماعي</h2></center>
+    <a href="https://www.facebook.com/ruknalofuk/" target="_blank"><i class="fab fa-facebook"></i><b> فيس بوك </b></a><br>
+    <a href="https://www.instagram.com/ruknalofuk/" target="_blank"><i class="fab fa-instagram"></i><b> انستغرام </b></a><br>
+    <a href="https://www.youtube.com/@RoknAlofuk" target="_blank"><i class="fab fa-youtube"></i><b> يوتيوب </b></a><br>
+    <a href="https://www.tiktok.com/@rukn_alofuk" target="_blank"><i class="fab fa-tiktok"></i><b> تيك توك </b></a><br>
+    <a href="https://x.com/RuknAlofuk" target="_blank"><i class="fab fa-x-twitter"></i><b> X-Twitter </b></a><br>
+    <a href="https://wa.me/966506899228" target="_blank"><i class="fab fa-whatsapp"></i><b> واتساب </b></a><br>
   </section>
 
-  <script>
-    let selectedStatus = "";
+  <section>
+    <h2 class="contact-title">تواصل معنا</h2>
+    <div class="contact-info">
+      <p>📞 الهاتف الأرضي: 0114760075 - 0114721110</p>
+      <p>📱 الجوال / واتساب: 0506899228 - 0550811106</p>
+      <p>✉ البريد الإلكتروني: <a href="mailto:ruknalofok@gmail.com">ruknalofok@gmail.com</a></p>
+      <p>📍 العنوان: السعودية - الرياض - حي الملز - شارع جرير</p>
+    </div>
+  </section>
 
-    document.querySelectorAll(".toggle").forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".toggle").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        selectedStatus = btn.dataset.status;
-      });
-    });
+  <footer>
+    <p>© ركن الأفق للعقارات. جميع الحقوق محفوظة.</p>
+    (رقم رخصة فال 1100219101)
+  </footer>
 
-    document.querySelector(".search-btn")?.addEventListener("click", () => {
-      const type = document.getElementById("type")?.value || "";
-      const area = document.getElementById("area")?.value || "";
-
-      if (!selectedStatus) {
-        alert("يرجى اختيار حالة العقار (إيجار أو شراء).");
-        return;
-      }
-
-      // توجيه المستخدم إلى صفحة نتائج البحث
-      window.location.href = `search-results.html?status=${selectedStatus}&type=${type}&area=${area}`;
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
