@@ -2,19 +2,8 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>العقارات للإيجار - ركن الأفق</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="about-us">
-  
-  </header>
-
-
-  <section class="section">
-    <center><h2>عروض للإيجار</h2></center>
-
-  <title>الإيجارات | ركن الأفق</title>
   <link rel="stylesheet" href="style.css">
   <style>
     .rent-section {
@@ -92,49 +81,97 @@
       width: 140px;
       height: auto;
       border-radius: 10px;
+      cursor: pointer;
     }
+
     .call-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 6px 18px;
-  background-color: #6d3d3d;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-}
-.call-btn:hover {
-  background-color: #5a2d2d;
-}
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 18px;
+      background-color: #6d3d3d;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .call-btn:hover {
+      background-color: #5a2d2d;
+    }
+
+    /* Popup styles */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .popup-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 90%;
+      max-height: 90%;
+      border: 4px solid white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #000;
+    }
   </style>
 </head>
 <body>
 
-  
+<header class="about-us"></header>
 
+<section class="section">
+  <center><h2>عروض للإيجار</h2></center>
   <center><p>نعرض لك أفضل العروض العقارية</p></center>
 
-    <!-- دور للإيجار -->
-    <div class="property">
-  <div class="info">
-    <h3> دور للإيجار حي الريان</h3>
-    <p>  4 غرف - 1 مطبخ - 3 حمام - 1 صالة</p>
-    <div class="price">41.000 ريال</div>
-    <a href="tel:966550811106" class="call-btn">اتصال</a>
-  </div>
-  <img src="dor_rayan.jpg" alt="دور في الريان">
-</div>
-    <!-- فيلا للإيجار -->
-    <div class="property">
-      <div class="info">
-        <h3>فيلا للإيجار حي جرير</h3>
-        <p>8 غرف - 1 مطبخ - غرفه حارس - حوش - 4 حمام - 1 صالة</p>
-        <div class="price">120,000 ريال</div>
-        <a href="tel:966550811106" class="call-btn">اتصال</a>
-      </div>
-      <img src="villa.jpg" alt="فيلا للإيجار">
+  <!-- أرض للإيجار -->
+  <div class="property">
+    <div class="info">
+      <h3>أرض للإيجار</h3>
+      <p>298 متر مربع</p>
+      <div class="price">120,000 ريال</div>
+      <a href="tel:966550811106" class="call-btn">اتصال</a>
     </div>
-  </section>
+    <img src="ardmalaz.jpg" alt="أرض في الملز" onclick="openPopup(this.src)">
+  </div>
+
+  <!-- فيلا للإيجار -->
+  <div class="property">
+    <div class="info">
+      <h3>فيلا للإيجار</h3>
+      <p>6 غرف - 1 مطبخ - 2 حمام - 1 صالة</p>
+      <div class="price">120,000 ريال</div>
+      <a href="tel:966550811106" class="call-btn">اتصال</a>
+    </div>
+    <img src="villa.jpg" alt="فيلا للإيجار" onclick="openPopup(this.src)">
+  </div>
+
+</section>
+
+<!-- ✅ Popup -->
+<div class="popup-overlay" id="popup" onclick="closePopup()">
+  <img id="popup-img" class="popup-image" src="" alt="صورة مكبرة">
+</div>
+
+<!-- ✅ JavaScript -->
+<script>
+  function openPopup(src) {
+    document.getElementById('popup-img').src = src;
+    document.getElementById('popup').style.display = 'block';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+</script>
 
 </body>
 </html>
