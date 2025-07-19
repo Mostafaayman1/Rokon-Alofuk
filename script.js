@@ -63,6 +63,26 @@ window.onload = function () {
     });
   }
 
+function openModal(id) {
+  document.getElementById(id).style.display = 'block';
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+// إغلاق النافذة عند الضغط خارجها
+window.onclick = function(event) {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(function(modal) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+};
+
+
+
   // تصفية حسب نوع العقار
   const typeFilter = document.getElementById("propertyType");
   if (typeFilter) {
