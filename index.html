@@ -9,17 +9,19 @@
 </head>
 
 <body>
-  <header></header>
+  <header>
+  <div class="logo-container">
+    <img src="logo.png" alt="ركن الأفق للعقارات" class="logo" />
+  </div>
 
-  <section class="about-us">
-    <div class="logo">
-      <center>
-        <span class="highlight-title">
-          <h1>ركن الأفق للعقارات</h1>
-        </span>
-        <p>قرب لك الفرصة، وبعد عنك العناء!</p>
-      </center>
-    </div>
+
+    <center>
+      <h1>ركن الأفق للعقارات</h1>
+    </center>
+    <center><p>قرب لك الفرصة، ونبعد عنك العناء!</p></center>
+  
+
+ </div>
 <div class="main-buttons" style="text-align:center;">
     <button onclick="location.href='rent.html'">إيجار</button>
     <button onclick="location.href='buy.html'">شراء</button>
@@ -27,54 +29,165 @@
   </div>
 <link rel="stylesheet" href="style.css">
   <div class="section">
-    <center><h2>من نحن</h2></center>
-    <p>ركن الأفق للعقارات متخصص في التطوير والتسويق العقاري وإدارة الأملاك. نخبة متميزة في عالم العقارات منذ عام 1416.</p>
+
+      <section>
+  <center><h3>من نحن</h3></center>
+      <p>ركن الأفق للعقارات متخصص في التطوير والتسويق العقاري وإدارة الأملاك. نخبة متميزة في عالم العقارات منذ عام 1416.</p>
+    </div>
+</section>
+
+  <section>
+
+   <center> <h3>خدماتنا</h3></center>
+      <ul>
+        <li>بيع و شراء العقارات السكنية و التجارية</li>
+        <li>تأجير العقارات</li>
+        <li>إدارة الأملاك</li>
+      </ul>
+
+</section>
+
+<section class="video-section">
+    <h2>فيديو تعريفي</h2>
     <video controls width="100%">
       <source src="https://rokon-alofuk.com/video.mp4" type="video/mp4">
       متصفحك لا يدعم عرض الفيديو.
     </video>
-  </div>
-
-  <div class="section">
-    <center><h2>خدماتنا</h2></center>
-    <ul class="services">
-      <li>بيع و شراء العقارات السكنية و التجارية</li>
-      <li>تأجير العقارات</li>
-      <li>إدارة الأملاك</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <center><h2>عروضنا</h2></center>
-    <ul class="services">
-      <li><a href="https://www.notion.so/21f382cd612b80f2a454d34f41a8c1de?v=21f382cd612b80b1bdca000c1f4be813&source=copy_link"><b> استعراض جميع العروض</b></a><br>
-
-  </div>
-  <section class="social-icons">
-    <center><h2>مواقع التواصل الإجتماعي</h2></center>
-    <a href="https://www.facebook.com/ruknalofuk/" target="_blank"><i class="fab fa-facebook"></i><b> فيس بوك </b></a><br>
-    <a href="https://www.instagram.com/ruknalofuk/" target="_blank"><i class="fab fa-instagram"></i><b> انستغرام </b></a><br>
-    <a href="https://www.youtube.com/@RoknAlofuk" target="_blank"><i class="fab fa-youtube"></i><b> يوتيوب </b></a><br>
-    <a href="https://www.tiktok.com/@rukn_alofuk" target="_blank"><i class="fab fa-tiktok"></i><b> تيك توك </b></a><br>
-    <a href="https://x.com/RuknAlofuk" target="_blank"><i class="fab fa-x-twitter"></i><b> X-Twitter </b></a><br>
-    <a href="https://wa.me/966550811106" target="_blank"><i class="fab fa-whatsapp"></i><b> واتساب </b></a><br>
   </section>
 
-  <section>
-    <h2 class="contact-title">تواصل معنا</h2>
-    <div class="contact-info">
+  <!-- النوافذ المنبثقة -->
+
+  <div id="offers" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('offers')">&times;</span>
+      <h3>عروضنا</h3>
+      <a href="https://www.notion.so/21f382cd612b80f2a454d34f41a8c1de?v=21f382cd612b80b1bdca000c1f4be813&source=copy_link" target="_blank">
+        استعراض جميع العروض
+      </a>
+    </div>
+  </div>
+
+  <div id="social" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('social')">&times;</span>
+      <h3>مواقع التواصل</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/ruknalofuk/" target="_blank"><i class="fab fa-facebook"></i> فيس بوك</a></li>
+        <li><a href="https://www.instagram.com/ruknalofuk/" target="_blank"><i class="fab fa-instagram"></i> انستغرام</a></li>
+        <li><a href="https://www.youtube.com/@RoknAlofuk" target="_blank"><i class="fab fa-youtube"></i> يوتيوب</a></li>
+        <li><a href="https://www.tiktok.com/@rukn_alofuk" target="_blank"><i class="fab fa-tiktok"></i> تيك توك</a></li>
+        <li><a href="https://x.com/RuknAlofuk" target="_blank"><i class="fab fa-x-twitter"></i> X-Twitter</a></li>
+        <li><a href="https://wa.me/966550811106" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="contact" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('contact')">&times;</span>
+      <h3>تواصل معنا</h3>
       <p>📞 الهاتف الأرضي: 0114760075 - 0114721110</p>
       <p>📱 الجوال / واتساب: 0506899228 - 0550811106</p>
       <p>✉ البريد الإلكتروني: <a href="mailto:ruknalofok@gmail.com">ruknalofok@gmail.com</a></p>
       <p>📍 العنوان: السعودية - الرياض - حي الملز - شارع جرير</p>
     </div>
-  </section>
+  </div>
+
+
+  <div class="main-buttons">
+
+    <button onclick="openModal('offers')">عروضنا</button>
+    <button onclick="openModal('social')">مواقع التواصل</button>
+    <button onclick="openModal('contact')">تواصل معنا</button>
+  </div>
+  
+
+<section>
+ <!-- نموذج عرض واحد مع تعديل فتح الصورة -->
+  <div class="property">
+    <div class="info">
+      <h3>ورش للبيع في الصناعية</h3>
+      <p>مساحة 1.150 - ثلاث شوارع - دخل سنوي 172,000 ريال</p>
+      <div class="price">3,680,000 ريال</div>
+      <a href="tel:966550811106" class="call-btn">اتصال</a>
+    </div>
+    <img src="workshop.jpg" alt="ورش للبيع" onclick="openPopup(this.src)">
+  </div>
+
+  
+  <!-- كرّر العملية لباقي الصور بنفس الطريقة -->
+  <div class="property">
+    <div class="info">
+      <h3>ارض للبيع في الملز</h3>
+      <p>298 متر مربع -علي شارعين وسط الرياض</p>
+      <div class="price">1,500,000 ريال</div>
+      <a href="tel:966550811106" class="call-btn">اتصال</a>
+    </div>
+    <img src="ard malaz.jpg" alt="ارض في الملز" onclick="openPopup(this.src)">
+  </div>
+
+ 
+     <!-- دور ارضي للبيع -->
+    <div class="property">
+      <div class="info">
+        <h3>للبيع دور ارضي حي طويق</h3>
+        <p>مساحة 360 م - دور ارضي بصك مستقل لكل دور - 9 غرف - صاله - مطبخ - سطح </p>
+        <div class="price">1,500,000 ريال</div>
+        <a href="tel:966550811106" class="call-btn">اتصال</a>
+      </div>
+    <img src="dor_twyq.jpg" alt="دور ارضي للبيع" onclick="openPopup(this.src)">
+    </div> 
+</section>
+
+
+
+
+
 
   <footer>
     <p>© ركن الأفق للعقارات. جميع الحقوق محفوظة.</p>
-    (رقم رخصة فال 1100219101)
+    <small>(رقم رخصة فال 1100219101)</small>
   </footer>
 
   <script src="script.js"></script>
+  
+<!-- ✅ Popup العنصر -->
+<div class="popup-overlay" id="popup" onclick="closePopup()">
+  <img id="popup-img" class="popup-image" src="" alt="صورة مكبرة">
+</div>
+
+<!-- ✅ JavaScript -->
+<script>
+  function openPopup(src) {
+    document.getElementById('popup-img').src = src;
+    document.getElementById('popup').style.display = 'block';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+</script>
+
+
+  <!-- JavaScript لتفعيل modals -->
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(function(modal) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    }
+  </script>
+
 </body>
 </html>
