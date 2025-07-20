@@ -334,13 +334,6 @@ header.about-us {
   margin: 20px 0;
 }
 
-/* تنسيق النموذج */
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
 
 .contact-form {
   background-color: #fff;
