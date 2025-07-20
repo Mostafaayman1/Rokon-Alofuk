@@ -307,3 +307,102 @@ section img {
       background-color: #8c693b;
     }
  
+   /* تنسيق عام */
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+header.about-us {
+  background-color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logo {
+  max-width: 140px;
+}
+
+/* عنوان رئيسي */
+.highlight-title {
+  color: #000000;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+/* تنسيق النموذج */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #a48a6d;
+  outline: none;
+}
+
+/* زر الإرسال */
+.custom-button {
+  background-color: #a48a6d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #a48a6d;
+}
+
+/* الفوتر */
+footer {
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 40px;
+}
+  footer p {
+  margin: 0;
+  font-size: 14px;
+}
